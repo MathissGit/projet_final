@@ -1,0 +1,16 @@
+.imgContent {
+    width: 50%;
+    margin-right: 2.5em;
+    margin-left: 2.5em;
+    object-fit: contain;
+}
+h2 {
+    font-family: 'Pompiere', cursive;
+    font-size: 3em;
+}
+h3 {
+    font-family: 'Pompiere', cursive;
+}
+.imgLogo {
+    width: 20%;
+}
