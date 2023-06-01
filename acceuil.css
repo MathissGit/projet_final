@@ -1,0 +1,263 @@
+
+/*top bar */
+
+.menu {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  background-color: rgb(251, 251, 251);
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  box-shadow: 0px 1px 3px #0407083d;
+  height: 7rem;
+  align-items: center;
+  flex-direction: row;
+}
+  
+.menu > li {
+  z-index: 2;
+  margin: 2px 1rem;
+  overflow: hidden;
+  font-size: 110%;
+  font-weight: bold;
+}
+  
+.menu-button-container {
+  z-index: 3;
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+  
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+
+  margin-top: 4vh;
+  display: block;
+  background-color: #180303;
+  position: fixed;
+  height: 4px;
+  width: 30px;
+  transition: transform 800ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+  margin-right: 13%;
+  
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -12px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 12px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: #040000;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+
+}
+nav{
+  width: 100%;
+  
+
+}
+ul.menu{
+  padding: 0px;
+}
+.nomliste{
+  
+  text-align: center;
+  
+ 
+  text-transform: none;
+  text-decoration: none;
+  color: rgb(9, 2, 2);
+  font-family: 'Pompiere', cursive,sans-serif;
+  font-size: 2em;
+}
+
+ /*logo top bar */
+
+.logoRond{
+  
+  width: 23rem;
+  margin-top: 0%;
+}
+    
+
+p{
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  position: static;
+}
+
+div{
+  display: flex;
+}
+
+
+.mg{
+  padding-top: 5.5%;
+  width: 50%;
+  width: 100%;
+  
+}
+
+.aa{display:flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+ 
+
+
+.titrebaniere{
+  position: absolute;
+  color: whitesmoke;
+  border-radius: 0.5vw;
+  
+  background-color: rgb(22 11 11 / 10%);
+}
+
+/* Responsive */
+
+@media (max-width: 1050px) {
+    
+     
+     /* Partie menu header */
+     .menu-button-container {
+       display: flex;
+       z-index: 6;
+       justify-content: flex-start;
+     }
+     
+    .logoRond {
+      width: 16rem;
+      margin-top: 0%;
+  }
+
+
+    .divLogoPlat{
+      
+      margin-left: 1%;
+      height: 6vh;
+      display: flex;
+      align-items: center;
+    }
+ 
+     .liste_{
+        height: 10vh;
+     }
+     ul{
+      height: 100vh;
+     }
+     .nomliste{
+        
+        margin-top: 0%;
+            color: #0000009e;
+            font-weight: 800;
+            cursor: pointer;
+        }
+ 
+     .top-nav {
+       display: flex;
+       flex-direction: row-reverse;
+       align-items: flex-start;
+       justify-content: space-between;
+       background-color: rgba(21, 1, 1, 0.292);
+       
+       }
+     .menu {
+       margin-bottom: 0%; 
+       padding-bottom: 2%;
+       position: fixed;
+       left: 0;
+       flex-direction: column;
+       width: 100%;
+      
+       align-items: center;
+       margin-top: 0%;
+       padding-top: 7%;
+       height: 9.5%;
+     }
+     .liste_{
+      padding: 10%;
+     }
+ 
+   
+ 
+     #menu-toggle ~ .menu li {
+       height: 0;
+       margin: 0;
+       padding: 0;
+       border: 0;
+       transition: height 200ms cubic-bezier(0.23, 1, 0.32, 1);
+     }
+ 
+     #menu-toggle:checked ~ .menu li {
+       
+        border-bottom:2px solid #b5a7a742;
+        background-color: rgb(251, 244, 244);
+        padding: 3.6em;
+        transition: height 200ms cubic-bezier(0.23, 1, 0.32, 1);
+        opacity: 8;
+        text-align: center;
+        display: flex;
+        align-items: center;
+     }
+     .menu > li {
+       display: flex;
+       justify-content: center;
+       margin: 0;
+       padding: 0.5em 0;
+       width: 100%;
+       
+     
+     }
+     .menu > li:not(:last-child) {
+       border-bottom: 1px solid  rgba(11, 11, 9, 0.85);;
+       
+     }
+     .menu-button::after:hover{
+       animation:vibration none;
+       cursor: pointer;
+     }
+       
+     
+   }
+
+   @media (max-width: 600px){
+    .logoPlat{
+      display: none;
+    }
+    
+   }
