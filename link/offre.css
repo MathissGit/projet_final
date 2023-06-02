@@ -1,3 +1,4 @@
+
 /* DEBUT navbar */
 
 .menu {
@@ -50,56 +51,32 @@ nav{
 
 
 /* DEBUT du main  */
+.dadBlock {
+    width: 100%;
+    justify-content: space-around;
+}
+.babyBlock {
+    width: 40%;
+    font-size: 1.4dvw;
+}
+.imgContent {
+    width: 50%; 
+}
+h2 {
+    font-family: 'Pompiere', cursive;
+    font-size: 4vw;
+}
+h3 {
+    font-family: 'Pompiere', cursive;
+    font-size: 3vw;
+}
+.imgLogo {
+    width: 3.5rem;
+}
+p {
+    font-size: 1.6vw;
+}
 
-.title2{
-  font-size: 3vw;
-}
-.title{
-  font-size: 3vw;
-  margin-top: 6rem;
-  margin-bottom: 1%;
-}
-.tailleP{
-  font-size: 1.4dvw;
-  margin: 0% 0% 0% 0%;
-  width: 90%;
-}
-.img1{
-  margin-top: 10%;
-  width: 100%;
-}
-.img2{
-  padding-left: 5%;
-  width: 100%;
-}
-.divcarré2{
-  width: 50%;
-}
-.divcarré{
-  padding-right: 2%;
-  padding-top: 3rem;
-  width: 50%;
-}
-.texte2{
-  width: 63%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.aticle2{
-  margin-top: 3%;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: space-around;
-}
-.aticle1{
-  padding-top: 10vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
 
 /* DEBUT Responsive */
 
@@ -160,4 +137,33 @@ nav{
 
   /* DEBUT Responsive main  */
 
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .dadBlock {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .babyBlock {
+        width: 90%;
+    }
+    .imgContent {
+        width: 90%;
+        object-fit: contain;
+    }
+    h2 {
+        font-family: 'Pompiere', cursive;
+        font-size: 5vw;
+    }
+    h3 {
+        font-family: 'Pompiere', cursive;
+        font-size: 4vw;
+    }
+    p {
+        font-size: 2vw;
+    }
 }

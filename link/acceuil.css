@@ -1,5 +1,4 @@
-
-/*top bar */
+/* DEBUT navbar */
 
 .menu {
   z-index: 1;
@@ -13,158 +12,153 @@
   height: 7rem;
   align-items: center;
   flex-direction: row;
+  padding: 0px;
 }
-  
+.menu-image {
+  display: none;
+}
 .menu > li {
   z-index: 2;
   margin: 2px 1rem;
-  overflow: hidden;
   font-size: 110%;
   font-weight: bold;
-}
-  
-.menu-button-container {
-  z-index: 3;
-  display: none;
-  height: 100%;
-  width: 30px;
-  cursor: pointer;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-}
-  
-#menu-toggle {
-  display: none;
-}
-
-.menu-button,
-.menu-button::before,
-.menu-button::after {
-
-  margin-top: 4vh;
+  text-align: center;
   display: block;
-  background-color: #180303;
-  position: fixed;
-  height: 4px;
-  width: 30px;
-  transition: transform 800ms cubic-bezier(0.23, 1, 0.32, 1);
-  border-radius: 2px;
-  margin-right: 13%;
-  
 }
-
-.menu-button::before {
-  content: '';
-  margin-top: -12px;
-}
-
-.menu-button::after {
-  content: '';
-  margin-top: 12px;
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button::before {
-  margin-top: 0px;
-  transform: rotate(405deg);
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button {
-  background: #040000;
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button::after {
-  margin-top: 0px;
-  transform: rotate(-405deg);
-}
-
 header{
   display: flex;
   flex-direction: row;
   width: 100%;
   flex-wrap: wrap;
-
 }
+
 nav{
   width: 100%;
-  
-
-}
-ul.menu{
-  padding: 0px;
 }
 .nomliste{
-  
-  text-align: center;
-  
- 
+  text-align: center; 
   text-transform: none;
   text-decoration: none;
   color: rgb(9, 2, 2);
   font-family: 'Pompiere', cursive,sans-serif;
   font-size: 2em;
 }
-
- /*logo top bar */
-
 .logoRond{
-  
   width: 23rem;
   margin-top: 0%;
 }
-    
 
-p{
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  position: static;
+
+/* DEBUT du main  */
+
+.title2{
+  font-size: 3vw;
 }
-
-div{
-  display: flex;
+.title{
+  font-size: 3vw;
+  margin-top: 6rem;
+  margin-bottom: 1%;
 }
-
-
-.mg{
-  padding-top: 5.5%;
-  width: 50%;
+.tailleP{
+  font-size: 1.4dvw;
+  margin: 0% 0% 0% 0%;
+  width: 90%;
+}
+.img1{
+  margin-top: 10%;
   width: 100%;
-  
 }
-
-.aa{display:flex;
-  flex-direction: column-reverse;
+.img2{
+  padding-left: 5%;
+  width: 100%;
+}
+.divcarré2{
+  width: 50%;
+}
+.divcarré{
+  padding-right: 2%;
+  padding-top: 3rem;
+  width: 50%;
+}
+.texte2{
+  width: 63%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
- 
-
-
-.titrebaniere{
-  position: absolute;
-  color: whitesmoke;
-  border-radius: 0.5vw;
-  
-  background-color: rgb(22 11 11 / 10%);
+.aticle2{
+  margin-top: 3%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+}
+.aticle1{
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
-/* Responsive */
+/* DEBUT Responsive */
 
-@media (max-width: 1050px) {
+@media (max-width: 1080px) {
     
-     
-     /* Partie menu header */
-     .menu-button-container {
-       display: flex;
-       z-index: 6;
-       justify-content: flex-start;
-     }
-     
-    .logoRond {
-      width: 16rem;
-      margin-top: 0%;
+  /* Partie menu header */
+    
+  .logoRond {
+    width: 16rem;
+    margin-top: 0%;
+  }
+  .menu-image {
+    margin-right: 4%;
+    width: 3.9em;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+    display: block;
+  } 
+  .nomliste {
+    margin-top: 0%;
+    color: #0000009e;
+    font-weight: 800;
+    cursor: pointer;
+  }
+  .top-nav {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: rgba(21, 1, 1, 0.292);
+  }
+  .menu {
+    margin-bottom: 0%; 
+    padding-bottom: 2%;
+    position: fixed;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 0%;
+    padding-top: 7%;
+    height: 10%;
+  }
+  .liste_{
+    padding: 10%;
+    height: 10vh
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.3em 0;
+    width: 100%;
+    display: none;
+    background-color: #ffffffb5;
   }
 
+  /* DEBUT Responsive main  */
 
     .divLogoPlat{
       
@@ -670,3 +664,4 @@ footer {
 }
 
 /** Fin CSS Geo **/
+}
