@@ -261,3 +261,412 @@ div{
     }
     
    }
+
+/** fin CSS Antoine **/
+/** début CSS Geo **/
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Pompiere', cursive;
+}
+
+p {
+  font-family: 'Pompiere', cursive;
+}
+
+a {
+  font-family: 'Pompiere', cursive;
+  color: black;
+  font-weight: bold;
+}
+
+/** début bloc 1 **/
+
+.bloc1 {
+  background-color: #D9D9D9;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+video {
+  width: 100%;
+}
+
+/** fin du bloc 1 **/
+/** début du bloc 2**/
+
+.bloc2 {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 3%;
+}
+
+.bouteille {
+  width: 30%;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 6vw;
+}
+
+.komboucha {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+p {
+  font-size: 3vw;
+  margin-top: 3%;
+}
+
+.savoirplus {
+  display: flex;
+  justify-content: center;
+  font-size: 3vw;
+  margin-top: 3%;
+  text-decoration: none
+}
+
+/** fin bloc 2 **/
+/** début bloc 3 **/
+
+.beffroi {
+  margin-top: 3%;
+  width: 30%;
+}
+
+.bloc3 {
+  background-color: #D9D9D9;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.lille {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3%;
+  width: 50%;
+}
+
+/** fin du bloc 3 **/
+/** début du bloc 4 **/
+
+.bloc4 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3%;
+  width: 100%;
+}
+
+.citation {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.ola {
+  width: 50%;
+}
+
+.owner {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+}
+
+h2 {
+  align-items: center;
+  display: flex;
+  font-family: 'Pompiere', cursive;
+  font-size: 5vw;
+  justify-content: center;
+  width: 50%;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3%;
+  width: 50%;
+
+
+}
+
+/** fin du bloc 4 **/
+/** début du footer **/
+
+footer {
+  align-items: center;
+  background-color: rgb(251, 251, 251);
+  border-top: 1px solid #D9D9D9;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+}
+
+.bloccontactfooter {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3%;
+  width: 100%;
+}
+
+.bloclienfooter {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.bloclogofooter {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.lienfooter {
+  font-family: 'Pompiere', cursive;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 2vw;
+  text-align: center;
+}
+
+.logofooter {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 50%;
+}
+
+.pfooter {
+  font-size: 2vw;
+  margin-top: 3%;
+}
+
+/** Media Querries **/
+
+@media (max-width: 600px) {
+  /* Styles spécifiques pour les petits écrans */
+
+  /** début header **/
+
+  header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25%;
+    width: 100%;
+  }
+
+  .lienheader {
+    color: white;
+    font-family: 'Pompiere', cursive;
+    font-size: 8vw;
+    list-style: none;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  .logonavbar {
+    width: 60%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  .bloclienheader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+  }
+
+  /** fin du header **/
+  /** début Bloc 1 **/
+
+  .bloc1 {
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .logonavbar {
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  video {
+    display: flex;
+    height: auto;
+    width: 100%;
+  }
+
+  /** fin du bloc 1**/
+  /**début du bloc 2 **/
+
+  .bloc2 {
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 10%;
+  }
+
+  .bouteille {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+    width: 50%;
+  }
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 8vw;
+    text-align: center;
+  }
+
+  .komboucha {
+    width: 50%;
+  }
+
+  p {
+    text-align: center;
+    display: flex;
+    font-size: 6vw;
+  }
+
+  .savoirplus {
+    display: flex;
+    justify-content: center;
+    font-size: 6vw;
+    text-decoration: none
+  }
+
+  /** fin du bloc 2 **/
+  /** début du bloc 3 **/
+
+  .bloc3 {
+    align-items: center;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .beffroi {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+    width: 50%;
+  }
+
+  /** fin du bloc 3 **/
+  /** début du bloc 4 **/
+
+  .ola {
+    width: 50%;
+  }
+
+  h2 {
+    align-items: center;
+    color: #646363cb;
+    display: flex;
+    font-family: 'Pompiere', cursive;
+    font-size: 6vw;
+    justify-content: center;
+    width: 50%;
+  }
+
+  /** fin du bloc 4 **/
+  /** début du footer **/
+
+  .bloccontactfooter {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    width: 100%;
+  }
+
+  .bloclienfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 3%;
+    width: 100%;
+  }
+
+  .bloclogofooter {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  footer {
+    align-items: center;
+    background-color: rgb(251, 251, 251);
+    border-top: 1px solid #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 3%;
+  }
+
+  .lienfooter {
+    font-family: 'Pompiere', cursive;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 6vw;
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  .logofooter {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 50%;
+  }
+
+  .pfooter {
+    font-size: 6vw;
+    margin: 0;
+  }
+
+}
+
+/** Fin CSS Geo **/
