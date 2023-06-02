@@ -1,4 +1,4 @@
-/*top bar */
+/* DEBUT navbar */
 
 .menu {
   z-index: 1;
@@ -12,8 +12,11 @@
   height: 7rem;
   align-items: center;
   flex-direction: row;
+  padding: 0px;
 }
-  
+.menu-image {
+  display: none;
+}
 .menu > li {
   z-index: 2;
   margin: 2px 1rem;
@@ -21,27 +24,18 @@
   font-weight: bold;
   text-align: center;
   display: block;
- 
 }
-  
 header{
   display: flex;
   flex-direction: row;
   width: 100%;
   flex-wrap: wrap;
-
 }
 
 nav{
   width: 100%;
 }
-
-ul.menu{
-  padding: 0px;
-}
-
 .nomliste{
-  
   text-align: center; 
   text-transform: none;
   text-decoration: none;
@@ -49,92 +43,44 @@ ul.menu{
   font-family: 'Pompiere', cursive,sans-serif;
   font-size: 2em;
 }
-
- /*logo top bar */
-
 .logoRond{
-  
   width: 23rem;
   margin-top: 0%;
 }
-    
-div{
-  display: flex;
-}
 
 
-.mg{
-  padding-top: 5.5%;
-  width: 50%;
-  width: 100%;
-  
-}
+/* DEBUT du main  */
 
-.aa{display:flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  justify-content: center;
-}
- 
-
-
-.titrebaniere{
-  position: absolute;
-  color: whitesmoke;
-  border-radius: 0.5vw;
-  
-  background-color: rgb(22 11 11 / 10%);
-}
-
-.positionTexte{
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
 .title2{
-font-size: 3vw;
+  font-size: 3vw;
 }
-
 .title{
   font-size: 3vw;
   margin-top: 6rem;
   margin-bottom: 1%;
 }
-
 .tailleP{
   font-size: 1.4dvw;
   margin: 0% 0% 0% 0%;
   width: 90%;
 }
-
 .img1{
- 
   margin-top: 10%;
-  width: 101%;
+  width: 100%;
 }
-
 .img2{
-padding-left: 5%;
-
-width: 100%;
+  padding-left: 5%;
+  width: 100%;
 }
-
 .divcarré2{
   width: 50%;
 }
-
-.divcarré
-{
+.divcarré{
   padding-right: 2%;
   padding-top: 3rem;
-  /* height: 28rem; */
-  /* object-fit: cover; */
   width: 50%;
 }
-
 .texte2{
-  display: flex;
   width: 63%;
   display: flex;
   flex-direction: column;
@@ -154,141 +100,64 @@ width: 100%;
   align-items: center;
   justify-content: space-around;
 }
-.menu-image {
-  display: none;
-}
 
-/* Responsive */
+/* DEBUT Responsive */
 
 @media (max-width: 1080px) {
     
-     
-     /* Partie menu header */
-     
-     
-    .logoRond {
-      width: 16rem;
-      margin-top: 0%;
+  /* Partie menu header */
+    
+  .logoRond {
+    width: 16rem;
+    margin-top: 0%;
   }
-
   .menu-image {
-      margin-right: 4%;
-      width: 3.9em;
-      position: fixed;
-      z-index: 2;
-      cursor: pointer;
-      display: block;
-      
-    }
-    
-    .divLogoPlat{
-      
-      margin-left: 1%;
-      height: 6vh;
-      display: flex;
-      align-items: center;
-    }
- 
-     .liste_{
-        height: 10vh;
-     }
-     ul{
-      height: 100vh;
-     }
-     .nomliste{
-        
-        margin-top: 0%;
-            color: #0000009e;
-            font-weight: 800;
-            cursor: pointer;
-        }
- 
-     .top-nav {
-       display: flex;
-       flex-direction: row-reverse;
-       align-items: flex-start;
-       justify-content: space-between;
-       background-color: rgba(21, 1, 1, 0.292);
-       
-       }
-     .menu {
-       margin-bottom: 0%; 
-       padding-bottom: 2%;
-       position: fixed;
-       left: 0;
-       flex-direction: column;
-       width: 100%;
-      
-       align-items: center;
-       margin-top: 0%;
-       padding-top: 7%;
-       height: 9.5%;
-     }
-     .liste_{
-      padding: 10%;
-     }
- 
-     .texte2{
-      display: flex;
-      width: 83%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
- 
-    .title{
-      font-size: 3vw;
-      margin-top: 5rem;
-      margin-bottom: 1%;
-    }
- 
-    
-     .menu > li {
-      display: flex;
-      justify-content: center;
-      margin: 0;
-      padding: 0.3em 0;
-      width: 100%;
-      display: none;
-      background-color: #ffffffb5;
-    }
-     
-    .aticle1 {
-      padding-top: 3vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
+    margin-right: 4%;
+    width: 3.9em;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+    display: block;
   } 
-  .aticle2 {
-    margin-top: 3%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-} 
-.tailleP {
-  font-size: 2.4dvw;
-  margin: 0%;
-  width: 100%;
-}
-.img2 {
-  padding-bottom: 2vh;
-  padding-left: 5%;
-  width: 100%;
-   }
-   .divcarré {
-    padding-right: 2%;
-    padding-top: 1rem;
-    width: 90%;
-}
-.divcarré2 {
-  padding-right: 4%;
-  padding-top: 1rem;
-  width: 100%;
-}
-
+  .nomliste {
+    margin-top: 0%;
+    color: #0000009e;
+    font-weight: 800;
+    cursor: pointer;
   }
-   
-    
-   
+  .top-nav {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: rgba(21, 1, 1, 0.292);
+  }
+  .menu {
+    margin-bottom: 0%; 
+    padding-bottom: 2%;
+    position: fixed;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 0%;
+    padding-top: 7%;
+    height: 10%;
+  }
+  .liste_{
+    padding: 10%;
+    height: 10vh
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.3em 0;
+    width: 100%;
+    display: none;
+    background-color: #ffffffb5;
+  }
+
+  /* DEBUT Responsive main  */
+
+}

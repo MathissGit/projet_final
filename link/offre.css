@@ -1,3 +1,56 @@
+
+/* DEBUT navbar */
+
+.menu {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  background-color: rgb(251, 251, 251);
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  box-shadow: 0px 1px 3px #0407083d;
+  height: 7rem;
+  align-items: center;
+  flex-direction: row;
+  padding: 0px;
+}
+.menu-image {
+  display: none;
+}
+.menu > li {
+  z-index: 2;
+  margin: 2px 1rem;
+  font-size: 110%;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+}
+header{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+nav{
+  width: 100%;
+}
+.nomliste{
+  text-align: center; 
+  text-transform: none;
+  text-decoration: none;
+  color: rgb(9, 2, 2);
+  font-family: 'Pompiere', cursive,sans-serif;
+  font-size: 2em;
+}
+.logoRond{
+  width: 23rem;
+  margin-top: 0%;
+}
+
+
+/* DEBUT du main  */
 .dadBlock {
     width: 100%;
     justify-content: space-around;
@@ -23,6 +76,72 @@ h3 {
 p {
     font-size: 1.6vw;
 }
+
+
+/* DEBUT Responsive */
+
+@media (max-width: 1080px) {
+    
+  /* Partie menu header */
+    
+  .logoRond {
+    width: 16rem;
+    margin-top: 0%;
+  }
+  .menu-image {
+    margin-right: 4%;
+    width: 3.9em;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+    display: block;
+  } 
+  .nomliste {
+    margin-top: 0%;
+    color: #0000009e;
+    font-weight: 800;
+    cursor: pointer;
+  }
+  .top-nav {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: rgba(21, 1, 1, 0.292);
+  }
+  .menu {
+    margin-bottom: 0%; 
+    padding-bottom: 2%;
+    position: fixed;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 0%;
+    padding-top: 7%;
+    height: 10%;
+  }
+  .liste_{
+    padding: 10%;
+    height: 10vh
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.3em 0;
+    width: 100%;
+    display: none;
+    background-color: #ffffffb5;
+  }
+
+  /* DEBUT Responsive main  */
+
+}
+
+
+
+
 @media screen and (max-width: 768px) {
     .dadBlock {
         flex-direction: column;
