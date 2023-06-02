@@ -18,42 +18,15 @@
 .menu > li {
   z-index: 2;
   margin: 2px 1rem;
-  overflow: hidden;
   font-size: 110%;
   font-weight: bold;
 }
   
-.menu-button-container {
-  z-index: 3;
-  display: none;
-  height: 100%;
-  width: 30px;
-  cursor: pointer;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
-}
   
-#menu-toggle {
-  display: none;
-}
 
-.menu-button,
-.menu-button::before,
-.menu-button::after {
 
-  margin-top: 4vh;
-  display: block;
-  background-color: #180303;
-  position: fixed;
-  height: 4px;
-  width: 30px;
-  transition: transform 800ms cubic-bezier(0.23, 1, 0.32, 1);
-  border-radius: 2px;
-  margin-right: 13%;
-  
-}
+
 
 .menu-button::before {
   content: '';
