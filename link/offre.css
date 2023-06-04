@@ -51,6 +51,9 @@ nav{
 
 
 /* DEBUT du main  */
+.main {
+  padding-top: 10vh;
+}
 .dadBlock {
     width: 100%;
     justify-content: space-around;
