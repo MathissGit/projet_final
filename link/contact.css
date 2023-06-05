@@ -79,6 +79,12 @@ p {
 
 /** début du footer **/
 
+.lienfooter {
+  font-family: 'Pompiere', cursive;
+  color: black;
+  font-weight: bold;
+}
+
 footer {
   align-items: center;
   background-color: rgb(251, 251, 251);
@@ -189,8 +195,6 @@ footer {
     display: none;
     background-color: #ffffffb5;
   }
-
-  /* DEBUT Responsive main  */
 
 }
 

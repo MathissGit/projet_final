@@ -51,56 +51,6 @@ nav{
 
 /* DEBUT du main  */
 
-.title2{
-  font-size: 3vw;
-}
-.title{
-  font-size: 3vw;
-  margin-top: 6rem;
-  margin-bottom: 1%;
-}
-.tailleP{
-  font-size: 1.4dvw;
-  margin: 0% 0% 0% 0%;
-  width: 90%;
-}
-.img1{
-  margin-top: 10%;
-  width: 100%;
-}
-.img2{
-  padding-left: 5%;
-  width: 100%;
-}
-.divcarré2{
-  width: 50%;
-}
-.divcarré{
-  padding-right: 2%;
-  padding-top: 3rem;
-  width: 50%;
-}
-.texte2{
-  width: 63%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.aticle2{
-  margin-top: 3%;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: space-around;
-}
-.aticle1{
-  padding-top: 10vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
-
 /* DEBUT Responsive */
 
 @media (max-width: 1080px) {
@@ -159,106 +109,11 @@ nav{
   }
 
   /* DEBUT Responsive main  */
-
-    .divLogoPlat{
-      
-      margin-left: 1%;
-      height: 6vh;
-      display: flex;
-      align-items: center;
-    }
- 
-     .liste_{
-        height: 10vh;
-     }
-     ul{
-      height: 100vh;
-     }
-     .nomliste{
-        
-        margin-top: 0%;
-            color: #0000009e;
-            font-weight: 800;
-            cursor: pointer;
-        }
- 
-     .top-nav {
-       display: flex;
-       flex-direction: row-reverse;
-       align-items: flex-start;
-       justify-content: space-between;
-       background-color: rgba(21, 1, 1, 0.292);
-       
-       }
-     .menu {
-       margin-bottom: 0%; 
-       padding-bottom: 2%;
-       position: fixed;
-       left: 0;
-       flex-direction: column;
-       width: 100%;
-      
-       align-items: center;
-       margin-top: 0%;
-       padding-top: 7%;
-       height: 9.5%;
-     }
-     .liste_{
-      padding: 10%;
-     }
- 
-   
- 
-     #menu-toggle ~ .menu li {
-       height: 0;
-       margin: 0;
-       padding: 0;
-       border: 0;
-       transition: height 200ms cubic-bezier(0.23, 1, 0.32, 1);
-     }
- 
-     #menu-toggle:checked ~ .menu li {
-       
-        border-bottom:2px solid #b5a7a742;
-        background-color: rgb(251, 244, 244);
-        padding: 3.6em;
-        transition: height 200ms cubic-bezier(0.23, 1, 0.32, 1);
-        opacity: 8;
-        text-align: center;
-        display: flex;
-        align-items: center;
-     }
-     .menu > li {
-       display: flex;
-       justify-content: center;
-       margin: 0;
-       padding: 0.5em 0;
-       width: 100%;
-       
-     
-     }
-     .menu > li:not(:last-child) {
-       border-bottom: 1px solid  rgba(11, 11, 9, 0.85);;
-       
-     }
-     .menu-button::after:hover{
-       animation:vibration none;
-       cursor: pointer;
-     }
-       
-     
-   }
-
-   @media (max-width: 600px){
-    .logoPlat{
-      display: none;
-    }
     
    }
 
 /** fin CSS Antoine **/
 /** début CSS Geo **/
-
 
 * {
   margin: 0;
