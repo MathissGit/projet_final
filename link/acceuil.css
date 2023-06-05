@@ -466,7 +466,7 @@ footer {
 
 /** Media Querries **/
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   /* Styles spécifiques pour les petits écrans */
 
   /** début header **/
@@ -602,6 +602,14 @@ footer {
   }
 
   /** fin du bloc 4 **/
+  
+
+}
+
+/** Fin CSS Geo **/
+
+@media (max-width: 425px) {
+
   /** début du footer **/
 
   .bloccontactfooter {
@@ -662,5 +670,3 @@ footer {
   }
 
 }
-
-/** Fin CSS Geo **/
