@@ -93,8 +93,10 @@ nav{
 }
 
 .description {
-  width: 50%;
-  font-size: 2vw;
+    width: 70%;
+    font-size: 3vw;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 .titre {
@@ -397,5 +399,37 @@ footer {
     font-size: 6vw;
     margin: 0;
   }
+
+  /** fin footer**/
+  /** début main **/
+
+  /** début bloc 1 **/
+
+.bloc1 {
+  align-items: center;
+  background-color: #D9D9D9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 40%;
+  padding-bottom: 5%;
+  width: 100%;
+}
+
+.description {
+  width: 90%;
+  font-size: 6vw;
+}
+
+.titre {
+  display: flex;
+  font-size: 4vw;
+  justify-content: center;
+  width: 50%;
+}
+
+.titrevaleur {
+  font-size: 15vw;
+}
 
 }
