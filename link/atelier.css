@@ -99,12 +99,13 @@ nav{
   border-radius: 50%;
 }
 .img2{
-  padding-left: 5%;
   width: 100%;
   border-radius: 50%;
 }
 .divcarré2{
-  width: 50%;
+  padding-left: 2%;
+  padding-top: 3rem;
+  width: 100%;
 }
 .divcarré{
   padding-right: 2%;
@@ -252,12 +253,57 @@ footer {
     display: none;
     background-color: #ffffffb5;
   }
-
-  /* DEBUT Responsive main  */
-
 }
 
 @media (max-width: 425px) {
+
+  /** début du main **/
+
+  .aticle1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aticle2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .divcarré{
+    width: 80%;
+    padding: 0;
+  }
+
+  .divcarré2{
+    width: 80%;
+  }
+
+  .img2{
+    border-radius: 50%;
+    margin-top: 10%;
+    width: 100%;
+  
+  }
+
+  .tailleP {
+    font-size: 6vw;
+    margin: 0% 0% 0% 0%;
+    width: 90%;
+  }
+
+  .title2{
+    font-size: 12vw;
+    font-weight: bold;
+    margin-bottom: 20%;
+    margin-top: 20%;
+    text-align: center;
+  }
+  .title{
+    font-size: 12vw;
+    font-weight: bold;
+    margin-bottom: 20%;
+    text-align: center;
+  }
 
   /** début du footer **/
 
