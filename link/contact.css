@@ -52,7 +52,11 @@ nav{
 /* DEBUT du main  */
 
 .divPrincipal {
-  padding-top: 10vh;
+  padding-top: 14vh;
+  padding-bottom: 5vh;
+}
+.babyDiv2 {
+  padding-top: 5vh;
 }
 h1 {
   font-family: 'Pompiere', cursive;
@@ -195,6 +199,30 @@ footer {
     background-color: #ffffffb5;
   }
 
+}
+
+
+@media (max-width: 425px) {
+
+  /** RESPONSIVE du main **/
+
+  .divPrincipal {
+    padding-top: 10vh;
+  }
+  .babyDiv2 {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+  h1 {
+    font-size: 10vw;
+  }
+  h2 {
+    font-size: 7vw;
+  }
+  p {
+    font-size: 4vw;
+  }
 }
 
 @media (max-width: 425px) {
