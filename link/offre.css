@@ -74,7 +74,7 @@ h3 {
     font-size: 3vw;
 }
 .imgLogo {
-    width: 3.5rem;
+    width: 8em;
 }
 p {
     font-size: 1.6vw;
@@ -209,7 +209,6 @@ footer {
     .dadBlock {
         flex-direction: column;
         align-items: center;
-
     }
     .babyBlock {
         width: 90%;
@@ -229,6 +228,9 @@ footer {
     p {
         font-size: 2vw;
     }
+    .imgLogo {
+      width: 5vh;
+  }
 }
 
 @media (max-width: 425px) {
