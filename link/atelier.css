@@ -1,3 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Pompiere', cursive;
+}
+
+p {
+  font-family: 'Pompiere', cursive;
+}
+
+a {
+  font-family: 'Pompiere', cursive;
+  color: black;
+  font-weight: bold;
+}
+
+
 /* DEBUT navbar */
 
 .menu {
@@ -52,25 +79,29 @@ nav{
 /* DEBUT du main  */
 
 .title2{
-  font-size: 3vw;
+  font-size: 5vw;
+  font-weight: bold;
 }
 .title{
-  font-size: 3vw;
+  font-size: 5vw;
+  font-weight: bold;
   margin-top: 6rem;
   margin-bottom: 1%;
 }
 .tailleP{
-  font-size: 1.4dvw;
+  font-size: 2vw;
   margin: 0% 0% 0% 0%;
   width: 90%;
 }
 .img1{
   margin-top: 10%;
   width: 100%;
+  border-radius: 50%;
 }
 .img2{
   padding-left: 5%;
   width: 100%;
+  border-radius: 50%;
 }
 .divcarré2{
   width: 50%;
@@ -87,10 +118,11 @@ nav{
   align-items: center;
 }
 .aticle2{
-  margin-top: 3%;
+  align-items: center;
   display: flex;
   flex-direction: row-reverse;
-  align-items: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
   justify-content: space-around;
 }
 .aticle1{
@@ -176,7 +208,7 @@ footer {
   }
   .menu-image {
     margin-right: 4%;
-    width: 3.9em;
+    width: 4.9em;
     position: fixed;
     z-index: 2;
     cursor: pointer;
