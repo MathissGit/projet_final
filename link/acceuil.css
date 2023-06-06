@@ -172,7 +172,7 @@ video {
 h1 {
   display: flex;
   justify-content: center;
-  font-size: 6vw;
+  font-size: 4vw;
 }
 
 .komboucha {
@@ -182,14 +182,14 @@ h1 {
 }
 
 p {
-  font-size: 3vw;
+  font-size: 2vw;
   margin-top: 3%;
 }
 
 .savoirplus {
   display: flex;
   justify-content: center;
-  font-size: 3vw;
+  font-size: 2vw;
   margin-top: 3%;
   text-decoration: none
 }
@@ -249,7 +249,7 @@ h2 {
   align-items: center;
   display: flex;
   font-family: 'Pompiere', cursive;
-  font-size: 5vw;
+  font-size: 3vw;
   justify-content: center;
   width: 50%;
 }
