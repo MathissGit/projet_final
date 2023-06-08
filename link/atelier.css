@@ -68,7 +68,7 @@ nav{
   text-decoration: none;
   color: rgb(9, 2, 2);
   font-family: 'Pompiere', cursive,sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .logoRond{
   width: 23rem;
@@ -206,11 +206,11 @@ footer {
     
   .logoRond {
     width: 16rem;
-    margin-top: 0%;
+    margin-top: 14%;
   }
   .menu-image {
     margin-right: 4%;
-    width: 4.9em;
+    width: 11vh;
     position: fixed;
     z-index: 2;
     cursor: pointer;
@@ -246,13 +246,13 @@ footer {
     height: 10vh
   }
   .menu > li {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0.3em 0;
+    margin: 0px;
+    padding: 6px 0;
     width: 100%;
+    border-radius: 12px;
+    border-bottom: solid 0.1px black;
+    background-color: rgb(251 251 251);
     display: none;
-    background-color: #ffffffb5;
   }
 }
 
