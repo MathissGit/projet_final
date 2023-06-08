@@ -1,5 +1,4 @@
-
-/*top bar */
+/* DEBUT navbar */
 
 .menu {
   z-index: 1;
@@ -13,218 +12,522 @@
   height: 7rem;
   align-items: center;
   flex-direction: row;
+  padding: 0px;
 }
-
+.menu-image {
+  display: none;
+}
 .menu > li {
   z-index: 2;
   margin: 2px 1rem;
   font-size: 110%;
   font-weight: bold;
+  text-align: center;
+  display: block;
 }
-  
-
-  
-
-
-
-
-.menu-button::before {
-  content: '';
-  margin-top: -12px;
-}
-
-.menu-button::after {
-  content: '';
-  margin-top: 12px;
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button::before {
-  margin-top: 0px;
-  transform: rotate(405deg);
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button {
-  background: #040000;
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button::after {
-  margin-top: 0px;
-  transform: rotate(-405deg);
-}
-
 header{
   display: flex;
   flex-direction: row;
   width: 100%;
   flex-wrap: wrap;
 }
+
 nav{
   width: 100%;
 }
-ul.menu{
-  padding: 0px;
-}
-.nomliste{ 
-  text-align: center;
+.nomliste{
+  text-align: center; 
   text-transform: none;
   text-decoration: none;
   color: rgb(9, 2, 2);
   font-family: 'Pompiere', cursive,sans-serif;
   font-size: 2em;
 }
-
- /*logo top bar */
-
 .logoRond{
-  
   width: 23rem;
   margin-top: 0%;
 }
+
+
+/* DEBUT du main  */
+
+/* DEBUT Responsive */
+
+@media (max-width: 1080px) {
     
-
-p{
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  position: static;
-}
-
-div{
-  display: flex;
-}
-
-
-.mg{
-  padding-top: 5.5%;
-  width: 50%;
-  width: 100%;
-  
-}
-
-.aa{display:flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  justify-content: center;
-}
- 
-
-
-.titrebaniere{
-  position: absolute;
-  color: whitesmoke;
-  border-radius: 0.5vw;
-  
-  background-color: rgb(22 11 11 / 10%);
-}
-
-/* Responsive */
-
-@media (max-width: 1050px) {
+  /* Partie menu header */
     
-     
-     /* Partie menu header */
-     .menu-button-container {
-       display: flex;
-       z-index: 6;
-       justify-content: flex-start;
-     }
-     
-    .logoRond {
-      width: 16rem;
-      margin-top: 0%;
+  .logoRond {
+    width: 16rem;
+    margin-top: 0%;
+  }
+  .menu-image {
+    margin-right: 4%;
+    width: 3.9em;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+    display: block;
+  } 
+  .nomliste {
+    margin-top: 0%;
+    color: #0000009e;
+    font-weight: 800;
+    cursor: pointer;
+  }
+  .top-nav {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: rgba(21, 1, 1, 0.292);
+  }
+  .menu {
+    margin-bottom: 0%; 
+    padding-bottom: 2%;
+    position: fixed;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 0%;
+    padding-top: 7%;
+    height: 10%;
+  }
+  .liste_{
+    padding: 10%;
+    height: 10vh
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.3em 0;
+    width: 100%;
+    display: none;
+    background-color: #ffffffb5;
   }
 
-
-    .divLogoPlat{
-      
-      margin-left: 1%;
-      height: 6vh;
-      display: flex;
-      align-items: center;
-    }
- 
-     .liste_{
-        height: 10vh;
-     }
-     ul{
-      height: 100vh;
-     }
-     .nomliste{
-        
-        margin-top: 0%;
-            color: #0000009e;
-            font-weight: 800;
-            cursor: pointer;
-        }
- 
-     .top-nav {
-       display: flex;
-       flex-direction: row-reverse;
-       align-items: flex-start;
-       justify-content: space-between;
-       background-color: rgba(21, 1, 1, 0.292);
-       
-       }
-     .menu {
-       margin-bottom: 0%; 
-       padding-bottom: 2%;
-       position: fixed;
-       left: 0;
-       flex-direction: column;
-       width: 100%;
-      
-       align-items: center;
-       margin-top: 0%;
-       padding-top: 7%;
-       height: 9.5%;
-     }
-     .liste_{
-      padding: 10%;
-     }
- 
-   
- 
-     #menu-toggle ~ .menu li {
-       height: 0;
-       margin: 0;
-       padding: 0;
-       border: 0;
-       transition: height 200ms cubic-bezier(0.23, 1, 0.32, 1);
-     }
- 
-     #menu-toggle:checked ~ .menu li {
-       
-        border-bottom:2px solid #b5a7a742;
-        background-color: rgb(251, 244, 244);
-        padding: 3.6em;
-        transition: height 200ms cubic-bezier(0.23, 1, 0.32, 1);
-        opacity: 8;
-        text-align: center;
-        display: flex;
-        align-items: center;
-     }
-     .menu > li {
-       display: flex;
-       justify-content: center;
-       margin: 0;
-       padding: 0.5em 0;
-       width: 100%;
-       
-     
-     }
-     .menu > li:not(:last-child) {
-       border-bottom: 1px solid  rgba(11, 11, 9, 0.85);;
-       
-     }
-     .menu-button::after:hover{
-       animation:vibration none;
-       cursor: pointer;
-     }
-       
-     
-   }
-
-   @media (max-width: 600px){
-    .logoPlat{
-      display: none;
-    }
+  /* DEBUT Responsive main  */
     
    }
+
+/** fin CSS Antoine **/
+/** début CSS Geo **/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Pompiere', cursive;
+}
+
+p {
+  font-family: 'Pompiere', cursive;
+}
+
+a {
+  font-family: 'Pompiere', cursive;
+  color: black;
+  font-weight: bold;
+}
+
+/** début bloc 1 **/
+
+.bloc1 {
+  background-color: #D9D9D9;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+video {
+  width: 100%;
+}
+
+/** fin du bloc 1 **/
+/** début du bloc 2**/
+
+.bloc2 {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 3%;
+}
+
+.bouteille {
+  width: 30%;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 4vw;
+}
+
+.komboucha {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+p {
+  font-size: 2vw;
+  margin-top: 3%;
+}
+
+.savoirplus {
+  display: flex;
+  justify-content: center;
+  font-size: 2vw;
+  margin-top: 3%;
+  text-decoration: none;
+}
+
+.savoirplus:hover {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/** fin bloc 2 **/
+/** début bloc 3 **/
+
+.beffroi {
+  margin-top: 3%;
+  width: 30%;
+}
+
+.bloc3 {
+  background-color: #D9D9D9;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.lille {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3%;
+  width: 50%;
+}
+
+/** fin du bloc 3 **/
+/** début du bloc 4 **/
+
+.bloc4 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3%;
+  width: 100%;
+}
+
+.citation {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.ola {
+  width: 50%;
+}
+
+.owner {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+}
+
+h2 {
+  align-items: center;
+  display: flex;
+  font-family: 'Pompiere', cursive;
+  font-size: 3vw;
+  justify-content: center;
+  width: 50%;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3%;
+  width: 50%;
+
+
+}
+
+/** fin du bloc 4 **/
+/** début du footer **/
+
+footer {
+  align-items: center;
+  background-color: rgb(251, 251, 251);
+  border-top: 1px solid #D9D9D9;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+}
+
+.bloccontactfooter {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3%;
+  width: 100%;
+}
+
+.bloclienfooter {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.bloclogofooter {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.lienfooter {
+  font-family: 'Pompiere', cursive;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 2vw;
+  text-align: center;
+}
+
+.logofooter {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 50%;
+}
+
+.pfooter {
+  font-size: 2vw;
+  margin-top: 3%;
+}
+
+/** Fin de footer **/
+
+/** Media Querries **/
+
+@media (max-width: 768px) {
+  /* Styles spécifiques pour les petits écrans */
+
+  /** début header **/
+
+  header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25%;
+    width: 100%;
+  }
+
+  .lienheader {
+    color: white;
+    font-family: 'Pompiere', cursive;
+    font-size: 8vw;
+    list-style: none;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  .logonavbar {
+    width: 60%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  .bloclienheader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+  }
+
+  /** fin du header **/
+  /** début Bloc 1 **/
+
+  .bloc1 {
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .logonavbar {
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  video {
+    display: flex;
+    height: auto;
+    width: 100%;
+  }
+
+  /** fin du bloc 1**/
+  /**début du bloc 2 **/
+
+  .bloc2 {
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 10%;
+  }
+
+  .bouteille {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+    width: 50%;
+  }
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 8vw;
+    text-align: center;
+  }
+
+  .komboucha {
+    width: 50%;
+  }
+
+  p {
+    text-align: center;
+    display: flex;
+    font-size: 6vw;
+  }
+
+  .savoirplus {
+    display: flex;
+    justify-content: center;
+    font-size: 6vw;
+    text-decoration: none
+  }
+
+  /** fin du bloc 2 **/
+  /** début du bloc 3 **/
+
+  .bloc3 {
+    align-items: center;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .beffroi {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+    width: 50%;
+  }
+
+  /** fin du bloc 3 **/
+  /** début du bloc 4 **/
+
+  .ola {
+    width: 50%;
+  }
+
+  h2 {
+    align-items: center;
+    color: #646363cb;
+    display: flex;
+    font-family: 'Pompiere', cursive;
+    font-size: 6vw;
+    justify-content: center;
+    width: 50%;
+  }
+
+  /** fin du bloc 4 **/
+  
+
+}
+
+/** Fin CSS Geo **/
+
+@media (max-width: 425px) {
+
+  /** début du footer **/
+
+  .bloccontactfooter {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    width: 100%;
+  }
+
+  .bloclienfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 3%;
+    width: 100%;
+  }
+
+  .bloclogofooter {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  footer {
+    align-items: center;
+    background-color: rgb(251, 251, 251);
+    border-top: 1px solid #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 3%;
+  }
+
+  .lienfooter {
+    font-family: 'Pompiere', cursive;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 6vw;
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  .logofooter {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 50%;
+  }
+
+  .pfooter {
+    font-size: 6vw;
+    margin: 0;
+  }
+
+}
