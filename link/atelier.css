@@ -365,3 +365,32 @@ footer {
   }
 
 }
+
+@keyframes vibration {
+  0% {
+    transform: translateX(-2px) translateY(-2px);
+  }
+  25% {
+    transform: translateX(2px) translateY(2px);
+  }
+  50% {
+    transform: translateX(2px) translateY(-2px);
+  }
+  75% {
+    transform: translateX(-2px) translateY(2px);
+  }
+  100% {
+    transform: translateX(-2px) translateY(-2px);
+  }
+}
+.liste_:hover{
+  animation: vibration 0.7s ease;
+}
+a:hover{
+  animation: vibration 0.7s ease;
+  color:goldenrod
+}
+
+.active{
+  color: goldenrod;
+}

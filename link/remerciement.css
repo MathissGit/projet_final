@@ -1,4 +1,35 @@
 /* DEBUT navbar */
+@keyframes vibration {
+  0% {
+    transform: translateX(-2px) translateY(-2px);
+  }
+  25% {
+    transform: translateX(2px) translateY(2px);
+  }
+  50% {
+    transform: translateX(2px) translateY(-2px);
+  }
+  75% {
+    transform: translateX(-2px) translateY(2px);
+  }
+  100% {
+    transform: translateX(-2px) translateY(-2px);
+  }
+}
+
+.liste_:hover{
+  animation: vibration 0.7s ease;
+}
+.lienfooter:hover{
+  color: goldenrod !important;
+  animation: vibration 0.7s ease;
+}
+
+.active{
+  color: goldenrod !important;
+  background-color: #fbfbfb !important;
+  
+}
 
 .menu {
   z-index: 1;
@@ -137,6 +168,7 @@ img {vertical-align: middle;}
 
 .active, .dot:hover {
   background-color: #717171;
+  animation:vibration none;
 }
 
 /* Fading animation */
