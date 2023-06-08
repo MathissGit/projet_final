@@ -17,6 +17,10 @@
   }
 }
 
+.nomliste:hover{
+  
+  color: goldenrod !important;
+}
 .liste_:hover{
   animation: vibration 0.7s ease;
 }
